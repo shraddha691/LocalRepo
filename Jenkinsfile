@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('Clone') {
-            steps {
-                git 'https://github.com/your-username/your-repo.git'
-            }
-        }
+        stage('Checkout') {
+    steps {
+        echo 'Code was already checked out by Jenkins.'
+     }
+   }
         stage('Build') {
             steps {
                 echo 'This is where the build would happen if you had one.'
